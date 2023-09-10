@@ -15,8 +15,6 @@ window.onload = function () {
 
 
     document.addEventListener('keydown', (e) => {
-      console.log("keydown")
-      console.log(e.key)
 
       if (e.key === 'ArrowUp') {
         console.log(game.player)
@@ -38,4 +36,10 @@ window.onload = function () {
     })
   
   }
+
+  
+  restartButton.addEventListener("click", function () {
+    startGame();
+  });
 };
+

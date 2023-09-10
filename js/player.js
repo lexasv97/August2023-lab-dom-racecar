@@ -23,8 +23,6 @@ class Player {
 
     move() {
 
-        console.log("moving")
-
         this.left += this.directionX 
         this.top += this.directionY
 
@@ -43,7 +41,6 @@ class Player {
             this.directionX *= -1
           }
       
-          // handles bottom side
         if (this.top > this.gameScreen.offsetHeight - this.height - 5) {
             this.top = this.gameScreen.offsetHeight - this.height - 5;
             this.directionY *= -1
@@ -54,8 +51,6 @@ class Player {
     }
 
     updatePosition() {
-
-        console.log("player line 57")
 
         this.element.style.top = `${this.top}px`
         this.element.style.left = `${this.left}px`
