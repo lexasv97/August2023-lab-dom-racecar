@@ -10,27 +10,27 @@ window.onload = function () {
 
   function startGame() {
     console.log("start game");
-    game = new Game()
-    game.start()
+    game = new Game();
+    game.start();
 
 
     document.addEventListener('keydown', (e) => {
 
       if (e.key === 'ArrowUp') {
         console.log(game.player)
-        game.player.directionY = -1
+        game.player.directionY = -2;
       }
 
       if (e.key === 'ArrowDown') {
-        game.player.directionY = 1
+        game.player.directionY = 2;
       }
 
       if (e.key === 'ArrowLeft') {
-        game.player.directionX = -1
+        game.player.directionX = -2;
       }
 
       if (e.key === 'ArrowRight') {
-        game.player.directionX = 1
+        game.player.directionX = 2;
       }
 
     })

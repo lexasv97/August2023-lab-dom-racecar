@@ -6,7 +6,7 @@ class Obstacle {
         this.top = 0;
         this.width = 100;
         this.height = 150;
-        this.element = document.createElement("img")
+        this.element = document.createElement("img");
         this.element.src = './images/redCar.png';
         this.element.style.position = "absolute";
         this.element.style.width = `${this.width}px`;
@@ -18,8 +18,8 @@ class Obstacle {
     }
 
     move() {
-        this.top += 3
-        this.updatePosition()
+        this.top += 3;
+        this.updatePosition();
     }
 
     updatePosition() {
